@@ -1,0 +1,232 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container Centralizador */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+}
+
+/* Seção Hero */
+.hero {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Seção Produtos */
+.produtos {
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.produtos h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.produtos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre os produtos */
+    justify-content: center;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 300px;
+    text-align: center;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.produto img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.produto h3 {
+    margin: 10px 0;
+}
+
+.produto p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.produto .preco {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Seção de Contato */
+.contato {
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.contato h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contato form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato label {
+    margin-bottom: 8px;
+}
+
+.contato input, .contato textarea {
+    margin-bottom: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contato button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contato button:hover {
+    background-color: #0056b3;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #00f;
+    text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .produtos-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produto {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .produto {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Cremes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Loja de Cremes</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Bem-vindo à nossa loja de cremes!</h2>
+            <p>Encontre os melhores cremes para cuidar da sua pele com qualidade e confiança.</p>
+        </div>
+    </section>
+
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h2>Nossos Produtos</h2>
+            <div class="produtos-grid">
+                <div class="produto">
+                    <img src="🌵🍑🐮.jpeg" alt="Creme Hidratante">
+                    <h3>Creme Hidratante Cuide-se Bem</h3>
+                    <p>Hidratação intensa para todos os tipos de pele.</p>
+                    <p class="preco">R$ 49,99</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="produto">
+                    <img src="download (12).jpeg" alt="Creme Anti-idade">
+                    <h3>Creme Hidratante Bubbaloo</h3>
+                    <p>Hidratação intensa para todos os tipos de pele.</p>
+                    <p class="preco">R$ 89,99</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="produto">
+                    <img src="banho premium 🫧✨.jpeg" alt="Creme Anti-idade">
+                    <h3>Creme Hidratante Coco</h3>
+                    <p>Hidratação intensa para todos os tipos de pele.</p>
+                    <p class="preco">R$ 49,99</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="produto">
+                    <img src="download (13).jpeg" alt="Creme Anti-idade">
+                    <h3>Creme Hidratante Flor de Maçã</h3>
+                    <p>Hidratação intensa para todos os tipos de pele.</p>
+                    <p class="preco">R$ 49,99</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form action="enviar-email.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Loja de Cremes. Todos os direitos reservados.</p>
+            <p>Contato: <a href="mailto:contato@lojadocreme.com">contato@lojadocreme.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
